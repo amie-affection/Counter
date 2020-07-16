@@ -13,8 +13,8 @@ class Counter extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     console.log("componentDidUpdate");
-    console.log(this.state.value);
-    console.log(prevState.value);
+    // console.log(this.state.value);
+    // console.log(prevState.value);
   }
 
   componentWillUnmount() {
@@ -30,10 +30,13 @@ class Counter extends Component {
     console.log(e.key);
   };
 
-  handleClick = () => {
-    console.log("handleClick");
+  inc = () => {
     this.setState((prevState) => ({ value: prevState.value + 1 }));
-    console.log(this.state.value);
+    // console.log(this.state.value);
+  };
+
+  dec = () => {
+    this.setState((prevState) => ({ value: prevState.value - 1 }));
   };
 
   render() {
@@ -41,10 +44,13 @@ class Counter extends Component {
     const { value } = this.state;
     return (
       <div>
-        <button className={styles.btn} type="button" onClick={this.handleClick}>
+        <button className={styles.btn} type="button" onClick={this.inc}>
           Plus
         </button>
         <span>{value}</span>
+        <button className={styles.btn} type="button" onClick={this.dec}>
+          Minus
+        </button>
       </div>
     );
   }
