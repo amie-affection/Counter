@@ -1,0 +1,1 @@
+{"version":3,"sources":["Counter.module.css"],"names":[],"mappings":"AAAA,oBACI,WAAY,CACZ,WAAY,CACZ,UAAW,CACX,wBAA6B,CAC7B,WAAY,CACZ,UAAW,CACX,eACJ","file":"main.712433ee.chunk.css","sourcesContent":[".btn {\r\n    margin: 10px;\r\n    height: 30px;\r\n    width: 80px;\r\n    background-color: yellowgreen;\r\n    border: none;\r\n    color: #fff;\r\n    font-weight: bold;\r\n}"]}
