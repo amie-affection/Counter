@@ -4,7 +4,7 @@ import Counter from "./components/counter/Counter";
 import CounterPageHook from "./components/counter/CounterPageHook";
 
 class App extends Component {
-  state = { isShow: true };
+  state = { isShow: false };
 
   clickToggle = () =>
     this.setState((prevState) => ({
